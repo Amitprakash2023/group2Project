@@ -1,5 +1,5 @@
 # Use maven:3.8.4-jdk-11 as the base image
-FROM maven:3.9.4-jdk-11
+FROM maven:3.8.4-jdk-11
 
 # Copy source code to /usr/src/app
 COPY . /usr/src/app
