@@ -1,7 +1,6 @@
-FROM tomcat:8.0-jre8
-MAINTAINER myname
-ENV myenv 8.0
-ADD jenkins.war /usr/local/tomcat/webapps/jenkins.war
+FROM tomcat :8.0
+ADD ./target/* .war /usr/local/tomcat/webapps/
 EXPOSE 8080
+WORKDIR /usr/local/tomcat/webapps/
 CMD ["catalina.sh", "run"]
 
