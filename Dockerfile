@@ -17,5 +17,5 @@ COPY target/myweb-0.0.9.war /usr/local/tomcat/webapps
 EXPOSE 8080
 
 # Set entrypoint or command to start Tomcat
-ENTRYPOINT ["catalina.sh", "run"]
+CMD ["catalina.sh", "run"]
 
